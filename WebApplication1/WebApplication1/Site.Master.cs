@@ -7,9 +7,6 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using WebApplication1.Models;
 using Microsoft.AspNet.Identity.EntityFramework;
 
