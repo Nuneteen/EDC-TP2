@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<properties>
+  <property land_register_number="12345" value="200000">
+    <address>
+      <city>Porto</city>
+      <street>Constituição</street>
+      <port_number>654</port_number>
+    </address>
+    <Owners>
+      <owner>
+        <tax_id>123123</tax_id>
+        <name>Nuno Silva</name>
+        <purchase_date>2015-07-15</purchase_date>
+      </owner>
+      <owner>
+        <tax_id>321321</tax_id>
+        <name>Nelson Rev</name>
+        <purchase_date>2013-04-12</purchase_date>
+      </owner>
+      <owner>
+        <tax_id>987456</tax_id>
+        <name>Crisitano Ronaldo</name>
+        <purchase_date>2014-06-14</purchase_date>
+      </owner>
+    </Owners>
+  </property>
+  <property land_register_number="12312" value="300000">
+    <address>
+      <city>Barcelos</city>
+      <street>Fumeiro</street>
+      <port_number>420</port_number>
+    </address>
+    <Owners>
+      <owner>
+        <tax_id>987987</tax_id>
+        <name>Carla Gonçalves</name>
+        <purchase_date>2014-01-12</purchase_date>
+      </owner>
+      <owner>
+        <tax_id>654987</tax_id>
+        <name>Ménito</name>
+        <purchase_date>2000-12-12</purchase_date>
+      </owner>
+      <owner>
+        <tax_id>456789</tax_id>
+        <name>Rui Ruca</name>
+        <purchase_date>2016-05-12</purchase_date>
+      </owner>
+    </Owners>
+  </property>
+  <property land_register_number="12346" value="100000">
+    <address>
+      <city>Aveiro</city>
+      <street>Lourenço Peixinho</street>
+      <port_number>1</port_number>
+    </address>
+    <Owners>
+      <owner>
+        <tax_id>123452</tax_id>
+        <name>António Mota</name>
+        <purchase_date>2015-01-01</purchase_date>
+      </owner>
+    </Owners>
+  </property>
+  <property land_register_number="12347" value="100012">
+    <address>
+      <city>Águeda</city>
+      <street>Sobreiro</street>
+      <port_number>45</port_number>
+    </address>
+    <Owners>
+      <owner>
+        <tax_id>123212</tax_id>
+        <name>Toni</name>
+        <purchase_date>2015-01-01</purchase_date>
+      </owner>
+      <owner>
+        <tax_id>465487</tax_id>
+        <name>Maria Leal</name>
+        <purchase_date>2016-01-14</purchase_date>
+      </owner>
+    </Owners>
+  </property>
+</properties>

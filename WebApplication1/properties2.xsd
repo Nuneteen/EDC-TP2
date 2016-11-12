@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="properties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="property">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="city" type="xs:string" />
+                    <xs:element name="street" type="xs:string" />
+                    <xs:element name="port_number" type="xs:integer" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Owners">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="owner">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="tax_id" type="xs:unsignedInt" />
+                          <xs:element name="name" type="xs:string" />
+                          <xs:element name="purchase_date" type="xs:date"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="land_register_number" type="xs:integer" use="required" />
+            <xs:attribute name="value" type="xs:unsignedInt" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
