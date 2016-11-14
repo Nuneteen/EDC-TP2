@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
   <xs:element name="cursos">
     <xs:complexType>
       <xs:sequence>
@@ -7,33 +7,134 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="guid" type="xs:unsignedShort" />
-              <xs:element name="codigo" type="xs:string" />
+              <xs:element name="codigo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="[0-9]{4}/(([A-Z])|[0-9])([0-9]{3})?"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="nome" type="xs:string" />
               <xs:element name="grau" type="xs:string" />
-              <xs:element name="ciclo" type="xs:unsignedByte" />
+              <xs:element name="ciclo" type="xs:byte" fixed="1" />
               <xs:element name="departamentos">
                 <xs:complexType>
-                  <xs:sequence>
-                    <xs:element maxOccurs="unbounded" name="departamento" type="xs:string" />
+                  <xs:sequence minOccurs="1" maxOccurs="unbounded">
+                    <xs:element name="departamento">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Departamento de Ambiente e Ordenamento" />
+                          <xs:enumeration value="Departamento de Biologia" />
+                          <xs:enumeration value="Departamento de Ciências Médicas" />
+                          <xs:enumeration value="Departamento de Ciências Sociais, Políticas e do Território" />
+                          <xs:enumeration value="Departamento de Comunicação e Arte" />
+                          <xs:enumeration value="Departamento de Economia, Gestão, Engenharia Industrial e Turismo" />
+                          <xs:enumeration value="Departamento de Educação e Psicologia" />
+                          <xs:enumeration value="Departamento de Eletrónica, Telecomunicações e Informática" />
+                          <xs:enumeration value="Departamento de Engenharia de Materiais e Cerâmica" />
+                          <xs:enumeration value="Departamento de Engenharia Civil" />
+                          <xs:enumeration value="Departamento de Engenharia Mecânica" />
+                          <xs:enumeration value="Departamento de Física" />
+                          <xs:enumeration value="Departamento de Geociências" />
+                          <xs:enumeration value="Departamento de Línguas e Culturas" />
+                          <xs:enumeration value="Departamento de Matemática" />
+                          <xs:enumeration value="Departamento de Química" />
+                          <xs:enumeration value="Escola Superior de Tecnologia e Gestão de Águeda" />
+                          <xs:enumeration value="Escola Superior de Saúde da Universidade de Aveiro" />
+                          <xs:enumeration value="Escola Superior Aveiro Norte" />
+                          <xs:enumeration value="Instituto Superior de Contabilidade e Administração da Universidade de Aveiro" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
               <xs:element name="areascientificas">
                 <xs:complexType>
-                  <xs:sequence minOccurs="0">
-                    <xs:element maxOccurs="unbounded" name="areacientifica" type="xs:string" />
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="areacientifica">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Ciências Sociais" />
+                          <xs:enumeration value="Biologia" />
+                          <xs:enumeration value="Geologia" />
+                          <xs:enumeration value="Línguas" />
+                          <xs:enumeration value="Tradução" />
+                          <xs:enumeration value="Ciências da Imagem Médica e Radioterapia" />
+                          <xs:enumeration value="Ciências da Saúde" />
+                          <xs:enumeration value="Geologia/Geociências" />
+                          <xs:enumeration value="Ciências Empresariais e da Administração" />
+                          <xs:enumeration value="Estudos Culturais" />
+                          <xs:enumeration value="Bioquímica" />
+                          <xs:enumeration value="Engenharia Geográfica" />
+                          <xs:enumeration value="Música" />
+                          <xs:enumeration value="Ciências e Tecnologias da Comunicação" />
+                          <xs:enumeration value="Engenharia Química" />
+                          <xs:enumeration value="Química" />
+                          <xs:enumeration value="Ciências Biomédicas" />
+                          <xs:enumeration value="Ciências e Engenharia do Ambiente" />
+                          <xs:enumeration value="Física" />
+                          <xs:enumeration value="Engenharia Mecânica" />
+                          <xs:enumeration value="Geociências" />
+                          <xs:enumeration value="Contabilidade" />
+                          <xs:enumeration value="Design" />
+                          <xs:enumeration value="Gestão" />
+                          <xs:enumeration value="Ciências e Tecnologias da Saúde" />
+                          <xs:enumeration value="Ciências da Engenharia" />
+                          <xs:enumeration value="Economia" />
+                          <xs:enumeration value="Ciências da Educação" />
+                          <xs:enumeration value="Ciências da Linguagem" />
+                          <xs:enumeration value="Didática e Tecnologia Educativa" />
+                          <xs:enumeration value="Estudos de Arte" />
+                          <xs:enumeration value="Estudos Literários" />
+                          <xs:enumeration value="Matemática" />
+                          <xs:enumeration value="Geografia" />
+                          <xs:enumeration value="Enfermagem" />
+                          <xs:enumeration value="Engenharia Biomédica" />
+                          <xs:enumeration value="Engenharia Civil" />
+                          <xs:enumeration value="Engenharia Computacional" />
+                          <xs:enumeration value="Informática" />
+                          <xs:enumeration value="Ciência e Engenharia dos Materiais" />
+                          <xs:enumeration value="Engenharia e Gestão Industrial" />
+                          <xs:enumeration value="Eletrotecnia" />
+                          <xs:enumeration value="Eletrotecnia / Análise e Processamento de Sinal" />
+                          <xs:enumeration value="Eletrotecnia / Controlo" />
+                          <xs:enumeration value="Eletrotecnia / Eletrónica (Elt)" />
+                          <xs:enumeration value="Eletrotecnia / Eletrotecnia Geral" />
+                          <xs:enumeration value="Eletrotecnia / Telecomunicações" />
+                          <xs:enumeration value="Psicologia" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
               <xs:element name="areasformacao">
                 <xs:complexType>
-                  <xs:sequence minOccurs="0">
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
                     <xs:element name="areaformacao" type="xs:string" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="regime" type="xs:string" />
-              <xs:element name="local" type="xs:string" />
+              <xs:element name="regime">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="diurno / laboral" />
+                    <xs:enumeration value="diurno ou noturno" />
+                    <xs:enumeration value="à distância" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="local">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Escola Superior Aveiro Norte, Oliveira de Azeméis" />
+                    <xs:enumeration value="Campus Universitário de Santiago, Aveiro" />
+                    <xs:enumeration value="ESTGA, Águeda" />
+                    <xs:enumeration value="ISCA, Aveiro (junto ao Campus Universitário de Santiago)" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="provas">
                 <xs:complexType mixed="true">
                   <xs:sequence minOccurs="0">
