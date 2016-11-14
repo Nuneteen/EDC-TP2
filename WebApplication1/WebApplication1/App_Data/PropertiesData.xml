@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<properties>
+  <property land_register="1">
+    <land_register>1</land_register>
+    <address>
+      <city>Porto</city>
+      <street>Rua Constituição</street>
+      <port_number>12</port_number>
+    </address>
+    <value>111111</value>
+    <owners>
+    </owners>
+  </property>
+  <property land_register="2">
+    <land_register>2</land_register>
+    <address>
+      <city>Aveiro</city>
+      <street>Peixinho</street>
+      <port_number>2</port_number>
+    </address>
+    <value>321321</value>
+    <owners>
+      <owner name="User9" tax_number="12345" date_purchase="2016/11/09" data_sale="" />
+    </owners>
+  </property>
+  <property land_register="3">
+    <land_register>3</land_register>
+    <address>
+      <city>Viseu</city>
+      <street>Rua 123</street>
+      <port_number>123</port_number>
+    </address>
+    <value>123123</value>
+    <owners>
+      <owner name="User3" tax_number="54321" date_purchase="2015/11/09" data_sale="" />
+    </owners>
+  </property>
+  <property land_register="4">
+    <land_register>4</land_register>
+    <address>
+      <city>Viseu</city>
+      <street>Rua 445</street>
+      <port_number>445</port_number>
+    </address>
+    <value>83576234</value>
+    <owners>
+      <owner name="User4" tax_number="4444" date_purchase="2014/11/09" data_sale="2015/11/09" />
+      <owner name="User5" tax_number="5555" date_purchase="2015/11/09" data_sale="" />
+    </owners>
+  </property>
+  <property land_register="6">
+    <land_register>6</land_register>
+    <address>
+      <city>Porto</city>
+      <street>Cedofeita</street>
+      <port_number>6</port_number>
+    </address>
+    <value>666666</value>
+    <owners />
+  </property>
+  <property land_register="7">
+    <land_register>7</land_register>
+    <address>
+      <city>Porto</city>
+      <street>Santa Catarina</street>
+      <port_number>722</port_number>
+    </address>
+    <value>2323232</value>
+    <owners />
+  </property>
+  <property land_register="8">
+    <land_register>8</land_register>
+    <address>
+      <city>Lisboa</city>
+      <street>Praça do Comercio</street>
+      <port_number>8</port_number>
+    </address>
+    <value>345347</value>
+    <owners>
+      <owner name="User6" tax_number="66666" date_purchase="1995/04/25" data_sale="2016/04/25" />
+      <owner name="User7" tax_number="7777" date_purchase="2016/04/25" data_sale="" />
+    </owners>
+  </property>
+  <property land_register="9">
+    <land_register>9</land_register>
+    <address>
+      <city>Lisboa</city>
+      <street>Marques</street>
+      <port_number>123422</port_number>
+    </address>
+    <value>432432</value>
+    <owners>
+      <owner name="User6" tax_number="66666" date_purchase="2000/04/25" data_sale="2001/04/25" />
+      <owner name="User7" tax_number="7777" date_purchase="2001/04/25" data_sale="2005/04/25" />
+      <owner name="User8" tax_number="8888" date_purchase="2005/04/25" data_sale="" />
+    </owners>
+  </property>
+  <property land_register="10">
+    <land_register>10</land_register>
+    <address>
+      <city>Faro</city>
+      <street>Faro Street</street>
+      <port_number>321</port_number>
+    </address>
+    <value>101010</value>
+    <owners />
+  </property>
+  <property land_register="11">
+    <land_register>11</land_register>
+    <address>
+      <city>Águeda</city>
+      <street>Rua do Sobreiro</street>
+      <port_number>231</port_number>
+    </address>
+    <value>120000</value>
+    <owners>
+      <owner name="Nuno" tax_number="67192" date_purchase="2009/12/12" data_sale="" />
+    </owners>
+  </property>
+</properties>
