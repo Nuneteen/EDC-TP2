@@ -18,7 +18,7 @@
     </div>
     <br />
 
-    <asp:GridView class="table table-striped table-hover" ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="XmlDataSource1">
+    <asp:GridView class="table table-striped table-hover" AllowPaging="True" ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="XmlDataSource1">
         <Columns>
             <asp:TemplateField HeaderText="guid" SortExpression="guid">
                 <ItemTemplate>
@@ -40,6 +40,7 @@
                 </div>
             </div>
         </EmptyDataTemplate>
+        <PagerStyle cssClass="pagination-ys" HorizontalAlign="Center"/>
     </asp:GridView>
 
 </asp:Content>

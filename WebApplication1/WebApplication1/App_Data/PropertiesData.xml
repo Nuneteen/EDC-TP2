@@ -20,7 +20,7 @@
     </address>
     <value>321321</value>
     <owners>
-      <owner name="User9" tax_number="12345" date_purchase="2016/11/09" data_sale="" />
+      <owner name="Nuno Silva" tax_number="12345" date_purchase="2016/11/09" data_sale="" />
     </owners>
   </property>
   <property land_register="3">
@@ -32,7 +32,7 @@
     </address>
     <value>123123</value>
     <owners>
-      <owner name="User3" tax_number="54321" date_purchase="2015/11/09" data_sale="" />
+      <owner name="Nelson" tax_number="54321" date_purchase="2015/11/09" data_sale="" />
     </owners>
   </property>
   <property land_register="4">
@@ -44,8 +44,8 @@
     </address>
     <value>83576234</value>
     <owners>
-      <owner name="User4" tax_number="4444" date_purchase="2014/11/09" data_sale="2015/11/09" />
-      <owner name="User5" tax_number="5555" date_purchase="2015/11/09" data_sale="" />
+      <owner name="Celestino" tax_number="4444" date_purchase="2014/11/09" data_sale="2015/11/09" />
+      <owner name="Grilo" tax_number="5555" date_purchase="2015/11/09" data_sale="" />
     </owners>
   </property>
   <property land_register="6">
@@ -77,8 +77,8 @@
     </address>
     <value>345347</value>
     <owners>
-      <owner name="User6" tax_number="66666" date_purchase="1995/04/25" data_sale="2016/04/25" />
-      <owner name="User7" tax_number="7777" date_purchase="2016/04/25" data_sale="" />
+      <owner name="Fragata" tax_number="66666" date_purchase="1995/04/25" data_sale="2016/04/25" />
+      <owner name="Adrego" tax_number="7777" date_purchase="2016/04/25" data_sale="" />
     </owners>
   </property>
   <property land_register="9">
@@ -90,9 +90,9 @@
     </address>
     <value>432432</value>
     <owners>
-      <owner name="User6" tax_number="66666" date_purchase="2000/04/25" data_sale="2001/04/25" />
-      <owner name="User7" tax_number="7777" date_purchase="2001/04/25" data_sale="2005/04/25" />
-      <owner name="User8" tax_number="8888" date_purchase="2005/04/25" data_sale="" />
+      <owner name="Fragata" tax_number="66666" date_purchase="2000/04/25" data_sale="2001/04/25" />
+      <owner name="Adrego" tax_number="7777" date_purchase="2001/04/25" data_sale="2005/04/25" />
+      <owner name="Miguel" tax_number="8888" date_purchase="2005/04/25" data_sale="" />
     </owners>
   </property>
   <property land_register="10">

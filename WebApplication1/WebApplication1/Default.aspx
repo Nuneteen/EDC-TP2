@@ -3,38 +3,34 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <h1>Engenharia de Dados e Conhecimento</h1>
+        <p class="lead">Unidade curricular de programação e modelação de informação.</p>
+        <p><a href="https://www.ua.pt/uc/2380" class="btn btn-primary btn-lg">Saber mais &raquo;</a></p>
     </div>
 
     <div class="row">
         <div class="col-md-4">
-            <h2>Getting started</h2>
+            <h2>TP1</h2>
             <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
+                Desenvolvimento de ASP.NET Web Forms usando bases de dados relacionais. 
+                Configuração de web forms com bootstrap.
+                Representação e manipulação em tabelas dos dados usando programação SQL.
+                Gestão de utilizadores. Acesso a páginas com utilizadores autenticados.
+
             </p>
         </div>
         <div class="col-md-4">
-            <h2>Web Hosting</h2>
+            <h2>TP2</h2>
             <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
+                Desenvolvimento de ASP.NET Web Forms usando XML. Validação de XML com ficheiros XSD (XML Schemas). Modelação de Schemas.
+                Representação e manipulação dos dados em formato XML usando XSLT, XPath, etc...
             </p>
+
+        </div>
+        <div class="col-md-4">
+            <h2>TP3</h2>
             <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
+                Desenvolvimento de ASP.NET Web Forms com RSS Feed. Representação e manipulação dos dados.
             </p>
         </div>
     </div>

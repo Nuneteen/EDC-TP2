@@ -25,7 +25,7 @@
         <div class="col-md-6 text-left">
         </div>
     </div>
-    <asp:GridView ID="GridView1" onrowupdating="propertyItemUpdating" OnRowDeleting="propertyItemDeleting" runat="server" CssClass="table table-striped table-hover" AutoGenerateColumns="False" AllowPaging="True" DataSourceID="XmlDataSource1" GridLines="None">
+    <asp:GridView ID="GridView1" onrowupdating="propertyItemUpdating" runat="server" CssClass="table table-striped table-hover" AutoGenerateColumns="False" AllowPaging="True" DataSourceID="XmlDataSource1" GridLines="None">
         <Columns>
             <asp:TemplateField HeaderText="Land Register">
                 <ItemTemplate>
@@ -90,11 +90,6 @@
                     <asp:LinkButton ID="lnkSave" runat="server" CommandName="Save" OnClick="lnkSave_Click">Save</asp:LinkButton> 
                     &nbsp;<asp:LinkButton ID="LinkButton3" runat="server" CommandName="Cancel" OnClick="lnkCancel_Click">Cancel</asp:LinkButton> 
                 </FooterTemplate> 
-            </asp:TemplateField>
-            <asp:TemplateField ShowHeader="False">
-                <ItemTemplate>
-                    <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Delete" ><i class="fa fa-trash"></i></asp:LinkButton>
-                </ItemTemplate>
             </asp:TemplateField>
         </Columns>
         <EmptyDataTemplate>

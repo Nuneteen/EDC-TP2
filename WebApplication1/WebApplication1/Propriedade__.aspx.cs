@@ -50,25 +50,6 @@ namespace Pratical_Work2
             GridView1.EditIndex = -1;
         }
 
-        public void propertyItemDeleting(object sender, GridViewDeleteEventArgs e)
-        {
-            GridViewRow row = GridView1.Rows[e.RowIndex];
-            var land_register = row.Cells[0].Controls[1];
-            Console.Write(land_register);
-            XmlDocument xdoc = XmlDataSource1.GetXmlDocument();
-            return;
-            XmlElement properties= xdoc.SelectSingleNode("properties") as XmlElement;
-            XmlElement property = xdoc.SelectSingleNode("properties/property[@land_register='" + land_register.ToString() + "']") as XmlElement;
-            properties.RemoveChild(property);
-
-            XmlDataSource1.Save();
-
-            e.Cancel = true;
-
-            GridView1.DataBind();
-
-        }
-
         protected void Search_Owner(object sender, EventArgs e)
         {
             if (tax_number.Text == "")

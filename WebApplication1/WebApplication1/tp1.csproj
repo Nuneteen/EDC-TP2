@@ -201,7 +201,6 @@
     <Content Include="App_Data\properties.xsl" />
     <Content Include="App_Data\PropertiesData.xml" />
     <Content Include="authors.aspx" />
-    <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
@@ -432,13 +431,6 @@
     </Compile>
     <Compile Include="authors.aspx.designer.cs">
       <DependentUpon>authors.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Course.aspx.cs">
       <DependentUpon>Course.aspx</DependentUpon>

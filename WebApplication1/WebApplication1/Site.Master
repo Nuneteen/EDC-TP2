@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> TP1 - EDC</title>
+    <title>EDC 16/17</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -46,16 +46,39 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/">EDC 16/17</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
+
                         <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/authors">Authors</a></li>
-                        <li><a runat="server" href="~/titles">Titles</a></li>
-                        <li><a runat="server" href="~/Courses">Courses</a></li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TP1<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                            <li><a runat="server" href="~/authors">Authors</a></li>
+                            <li><a runat="server" href="~/titles">Titles</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TP2<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                            <li><a runat="server" href="~/Courses">Courses</a></li>
+                            <li class="divider"></li>
+                            <li><a runat="server" href="~/Propriedade__">Properties</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TP3<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                            <li><a runat="server">Still empty :)</a></li>
+                            </ul>
+                        </li>
+
                         <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+
                         <asp:LoginView runat="server">
                             <LoggedInTemplate>
                                 <li><a runat="server" href="~/personal/displayReports"><i class="fa fa-shopping-cart"></i></a></li>
