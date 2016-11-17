@@ -20,7 +20,8 @@
     </address>
     <value>321321</value>
     <owners>
-      <owner name="Nuno Silva" tax_number="12345" date_purchase="2016/11/09" data_sale="" />
+      <owner name="Nuno Silva" tax_number="12345" date_purchase="2016/11/09" data_sale="2016/11/10" />
+      <owner name="AAAAA" tax_number="123" date_purchase="2016/11/01" data_sale="" />
     </owners>
   </property>
   <property land_register="3">
@@ -115,6 +116,18 @@
     <value>120000</value>
     <owners>
       <owner name="Nuno" tax_number="67192" date_purchase="2009/12/12" data_sale="" />
+    </owners>
+  </property>
+  <property land_register="12">
+    <land_register>12</land_register>
+    <address>
+      <city>AAAAAA</city>
+      <street>WWWWWW</street>
+      <port_number>111</port_number>
+    </address>
+    <value>222222</value>
+    <owners>
+      <owner name="AAAAA" tax_number="123" date_purchase="2016/04/04" data_sale="2016/05/05" />
     </owners>
   </property>
 </properties>
