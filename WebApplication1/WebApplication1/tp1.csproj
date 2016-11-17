@@ -213,6 +213,7 @@
     <Content Include="cursos.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="FeedReader.aspx" />
     <Content Include="mbioq.xml" />
     <Content Include="mect.xml" />
     <Content Include="Owners.aspx" />
@@ -452,6 +453,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeedReader.aspx.cs">
+      <DependentUpon>FeedReader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedReader.aspx.designer.cs">
+      <DependentUpon>FeedReader.aspx</DependentUpon>
     </Compile>
     <Compile Include="IISHandler1.cs" />
     <Compile Include="Owners.aspx.cs">
