@@ -66,7 +66,6 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TP2<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                             <li><a runat="server" href="~/Courses">Courses</a></li>
-                            <li class="divider"></li>
                             <li><a runat="server" href="~/Propriedade__">Properties</a></li>
                             </ul>
                         </li>
@@ -74,7 +73,7 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TP3<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                            <li><a runat="server">Still empty :)</a></li>
+                            <li><a runat="server" href="FeedReader.aspx">Feed Reader</a></li>
                             </ul>
                         </li>
 

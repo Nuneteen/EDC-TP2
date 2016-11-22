@@ -198,6 +198,8 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="App_Data\channel.xsl" />
+    <Content Include="App_Data\FeedsList.xml" />
     <Content Include="App_Data\properties.xsl" />
     <Content Include="App_Data\PropertiesData.xml" />
     <Content Include="authors.aspx" />
@@ -214,6 +216,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="FeedReader.aspx" />
+    <Content Include="manageFeeds.aspx" />
     <Content Include="mbioq.xml" />
     <Content Include="mect.xml" />
     <Content Include="Owners.aspx" />
@@ -462,6 +465,13 @@
       <DependentUpon>FeedReader.aspx</DependentUpon>
     </Compile>
     <Compile Include="IISHandler1.cs" />
+    <Compile Include="manageFeeds.aspx.cs">
+      <DependentUpon>manageFeeds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manageFeeds.aspx.designer.cs">
+      <DependentUpon>manageFeeds.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Owners.aspx.cs">
       <DependentUpon>Owners.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

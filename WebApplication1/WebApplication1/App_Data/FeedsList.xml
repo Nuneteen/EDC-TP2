@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feeds>
+  <feed name="Publico" url="http://feeds.feedburner.com/PublicoRSS?format=xml" />
+  <feed name="BBC World News" url="http://feeds.bbci.co.uk/news/world/rss.xml" />
+  <feed name="IPMA" url="https://www.ipma.pt/resources.www/rss/rss.news.ipma.xml" />
+  <feed name="A Bola" url="http://a-bola.webnode.pt/rss/noticias.xml" />
+</feeds>

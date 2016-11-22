@@ -1,28 +1,37 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FeedReader.aspx.cs" Inherits="tp1.FeedReader" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FeedReader.aspx.cs" Inherits="EDC_Trabalho3.Feed" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:Label ID="Label1" runat="server">
-        <h1>
-            <i class="fa fa-rss" aria-hidden="true"></i>
-            My Feed Reader
-        </h1>
-    </asp:Label>
-
+    <h1><i class="fa fa-rss fa-4"></i> My Feed Reader</h1>
     <hr />
+    <div class="row">
+        <asp:XmlDataSource ID="XmlDataSource_feed" TransformFile="~/App_Data/channel.xsl" runat="server" EnableCaching="false"></asp:XmlDataSource>
+        <div class="col-md-6" style="text-align: left">
+            <asp:DropDownList ID="feedChooser" runat="server" CssClass="form-control" AutoPostBack="True" DataSourceID="XmlDataSourceFeedReader" DataTextField="name" DataValueField="url"></asp:DropDownList>
+             <asp:XmlDataSource ID="XmlDataSourceFeedReader" runat="server" DataFile="~/App_Data/FeedsList.xml"></asp:XmlDataSource>
+            <br />
 
-    <div class="w3-row-padding">
+            <div>
+                  <asp:TextBox runat="server" type="text" class="col-md-6 form-group form-control" ID="ToSearch"></asp:TextBox>
+                  <asp:Button runat="server" Text="Search" class="col-md-6" CssClass="btn btn-primary" OnClick="Search_New" />
+            </div>
 
-        <div class="w3-twothird w3-container">
+            <br />
+            <div class="input-group">
+                  <label>Categories</label>
+                  <asp:DropDownList ID="DD_Category" runat="server" AppendDataBoundItems="true" CssClass="form-control" AutoPostBack="True" OnSelectedIndexChanged="DD_Category_SelectedIndexChanged"></asp:DropDownList>
+            </div>
+        </div>
+        
+        <div class="col-md-6" style="text-align: right; margin-top: 0px;">
+            <asp:LinkButton ID="ManageFeeds" PostBackUrl="~/manageFeeds.aspx" runat="server" CssClass="btn btn-primary"><i class="fa fa-rss"></i>&nbsp;Manage feeds</asp:LinkButton>
+        </div>
+        
+        <div class="col-md-6" style="text-align: left; margin-top: 10px;">
             
-            <asp:DropDownList ID="DropDownList1" class="form-control" runat="server">
-            </asp:DropDownList>
-            
-            <asp:Label ID="Label3" runat="server">
-                <h2>Feed Info</h2>
-            </asp:Label>
-
-            <asp:XmlDataSource ID="XmlDataSource1" runat="server"></asp:XmlDataSource>
-
+        </div>
+    </div>
+    <div class="row" id="feed_info" runat="server">
+        <div class="col-md-6">
+            <h3>Feed Info</h3>
             <table class="table table-striped">
                 <tbody>
                 <tr>
@@ -59,20 +68,22 @@
                 </tr>
                 </tbody>
             </table>
-            
         </div>
-
-        <div class="w3-third w3-container">
-
-            <asp:LinkButton ID="LinkButton1" class="btn btn-primary" runat="server"><i class="fa fa-rss" aria-hidden="true"></i> Manage Feeds</asp:LinkButton>
-
-            <asp:Label ID="Label2" runat="server" >
-                <h2> Feed Image </h2>
-            </asp:Label>
-            
-            <asp:Image ID="Image1" runat="server" />
-
+        <div class="col-md-6 text-center">
+            <h3>Feed Image</h3>
+            <div class="row">
+                <div class="col-xs-4"></div>
+        		<div class="col-xs-4">
+        			<img runat="server" ID="channelImage" src="http://www.freeiconspng.com/uploads/no-image-icon-23.jpg" style="width:160px" class="img-responsive img-radio">
+        		</div>
+                <div class="col-xs-4"></div>
+        	</div>
         </div>
-
     </div>
+        
+    <hr />
+    <h3>Feed News <small><asp:Label runat="server" ID="counter_news" Text="10"></asp:Label></small></h3>
+
+    <div runat="server" ID="news" class="row"></div>
+
 </asp:Content>

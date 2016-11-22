@@ -7004,3 +7004,48 @@ a.list-group-item-danger.active:focus {
 .popover-title {
   border: none;
 }
+.btn-manage { 
+  color: #FFFFFF; 
+  background-color: #161517; 
+  border-color: #434245; 
+} 
+ 
+.btn-manage:hover, 
+.btn-manage:focus, 
+.btn-manage:active, 
+.btn-manage.active, 
+.open .dropdown-toggle.btn-manage { 
+  color: #FFFFFF; 
+  background-color: #434245; 
+  border-color: #434245; 
+} 
+ 
+.btn-manage:active, 
+.btn-manage.active, 
+.open .dropdown-toggle.btn-manage { 
+  background-image: none; 
+} 
+ 
+.btn-manage.disabled, 
+.btn-manage[disabled], 
+fieldset[disabled] .btn-manage, 
+.btn-manage.disabled:hover, 
+.btn-manage[disabled]:hover, 
+fieldset[disabled] .btn-manage:hover, 
+.btn-manage.disabled:focus, 
+.btn-manage[disabled]:focus, 
+fieldset[disabled] .btn-manage:focus, 
+.btn-manage.disabled:active, 
+.btn-manage[disabled]:active, 
+fieldset[disabled] .btn-manage:active, 
+.btn-manage.disabled.active, 
+.btn-manage[disabled].active, 
+fieldset[disabled] .btn-manage.active { 
+  background-color: #161517; 
+  border-color: #434245; 
+} 
+ 
+.btn-manage .badge { 
+  color: #161517; 
+  background-color: #FFFFFF; 
+}

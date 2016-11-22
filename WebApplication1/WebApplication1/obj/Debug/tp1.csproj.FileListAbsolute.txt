@@ -156,7 +156,6 @@ C:\Users\Nuno Silva\Documents\Visual Studio 2015\Projects\edcrepo\EDC-TP2\WebApp
 C:\Users\Nuno Silva\Documents\Visual Studio 2015\Projects\edcrepo\EDC-TP2\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Nuno Silva\Documents\Visual Studio 2015\Projects\edcrepo\EDC-TP2\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Nuno Silva\Documents\Visual Studio 2015\Projects\edcrepo\EDC-TP2\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\Nuno Silva\Documents\Visual Studio 2015\Projects\edcrepo\EDC-TP2\WebApplication1\WebApplication1\obj\Debug\tp1.csprojResolveAssemblyReference.cache
 C:\Users\Nuno Silva\Documents\Visual Studio 2015\Projects\edcrepo\EDC-TP2\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.InitialCreate.resources
 C:\Users\Nuno Silva\Documents\Visual Studio 2015\Projects\edcrepo\EDC-TP2\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.BirthDate.resources
 C:\Users\Nuno Silva\Documents\Visual Studio 2015\Projects\edcrepo\EDC-TP2\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.FullName.resources
