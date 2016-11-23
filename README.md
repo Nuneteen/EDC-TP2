@@ -1,2 +1,2 @@
-# EDC-TP2
-Segundo trabalho prático da disciplina de Engenharia de dados e conhecimento
+# EDC
+Practical work for Engineering of Data and Knowledge subject(Engenharia de Dados e conhecimento) subject.
