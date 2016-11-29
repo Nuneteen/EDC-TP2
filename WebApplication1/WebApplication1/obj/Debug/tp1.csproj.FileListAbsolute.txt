@@ -162,3 +162,4 @@ C:\Users\Nuno Silva\Documents\Visual Studio 2015\Projects\edcrepo\EDC-TP2\WebApp
 C:\Users\Nuno Silva\Documents\Visual Studio 2015\Projects\edcrepo\EDC-TP2\WebApplication1\WebApplication1\obj\Debug\tp1.csproj.GenerateResource.Cache
 C:\Users\Nuno Silva\Documents\Visual Studio 2015\Projects\edcrepo\EDC-TP2\WebApplication1\WebApplication1\obj\Debug\tp1.dll
 C:\Users\Nuno Silva\Documents\Visual Studio 2015\Projects\edcrepo\EDC-TP2\WebApplication1\WebApplication1\obj\Debug\tp1.pdb
+C:\Users\Nuno Silva\Documents\Visual Studio 2015\Projects\edcrepo\EDC-TP2\WebApplication1\WebApplication1\obj\Debug\tp1.csprojResolveAssemblyReference.cache

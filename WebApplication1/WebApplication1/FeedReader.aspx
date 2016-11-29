@@ -5,7 +5,9 @@
     <div class="row">
         <asp:XmlDataSource ID="XmlDataSource_feed" TransformFile="~/App_Data/channel.xsl" runat="server" EnableCaching="false"></asp:XmlDataSource>
         <div class="col-md-6" style="text-align: left">
-            <asp:DropDownList ID="feedChooser" runat="server" CssClass="form-control" AutoPostBack="True" DataSourceID="XmlDataSourceFeedReader" DataTextField="name" DataValueField="url"></asp:DropDownList>
+            <asp:DropDownList ID="feedChooser" runat="server" CssClass="form-control" AutoPostBack="True" AppendDataBoundItems="True" DataSourceID="XmlDataSourceFeedReader" DataTextField="name" DataValueField="url" OnSelectedIndexChanged="feedChooser_SelectedIndexChanged">
+                <asp:ListItem Selected="True">All</asp:ListItem>
+            </asp:DropDownList>
              <asp:XmlDataSource ID="XmlDataSourceFeedReader" runat="server" DataFile="~/App_Data/FeedsList.xml"></asp:XmlDataSource>
             <br />
 
@@ -17,7 +19,9 @@
             <br />
             <div class="input-group">
                   <label>Categories</label>
-                  <asp:DropDownList ID="DD_Category" runat="server" AppendDataBoundItems="true" CssClass="form-control" AutoPostBack="True" OnSelectedIndexChanged="DD_Category_SelectedIndexChanged"></asp:DropDownList>
+                  <asp:DropDownList ID="DD_Category" runat="server" CssClass="form-control" AutoPostBack="True">
+                    <asp:ListItem Selected="True">All</asp:ListItem>
+                </asp:DropDownList>
             </div>
         </div>
         
@@ -32,37 +36,37 @@
     <div class="row" id="feed_info" runat="server">
         <div class="col-md-6">
             <h3>Feed Info</h3>
-            <table class="table table-striped">
+            <table id="table" runat="server" class="table table-striped">
                 <tbody>
-                <tr>
-                    <th scope="row">Title</th>
-                    <td><asp:Label ID="titleLabel" runat="server"  /></td>
+                <tr runat="server">
+                    <th scope="row" id="titleRow" style="height: 30px">Title</th>
+                    <td style="height: 30px"><asp:Label ID="titleLabel" runat="server"  /></td>
                 </tr>
-                <tr>
+                <tr id="linkRow" runat="server">
                     <th scope="row">Link</th>
                     <td><asp:Label ID="linkLabel" runat="server"  /></td>
                 </tr>
-                <tr>
+                <tr id="descriptionRow" runat="server">
                     <th scope="row">Description</th>
                     <td><asp:Label ID="descriptionLabel" runat="server"  /></td>
                 </tr>
-                <tr>
+                <tr id="languageRow" runat="server">
                     <th scope="row">Language</th>
                     <td><asp:Label ID="languageLabel" runat="server"  /></td>
                 </tr>
-                <tr>
+                <tr id="managRow" runat="server">
                     <th scope="row">ManagingEditor</th>
                     <td><asp:Label ID="ManagingEditorLabel" runat="server" /></td>
                 </tr>
-                <tr>
+                <tr id="webRow" runat="server">
                     <th scope="row">WebMaster</th>
                     <td><asp:Label ID="WebMasterLabel" runat="server"  /></td>
                 </tr>
-                <tr>
+                <tr id="lastRow" runat="server">
                     <th scope="row">LastBuildDate</th>
                     <td><asp:Label ID="LastBuildDateLabel" runat="server"  /></td>
                 </tr>
-                <tr>
+                <tr id="categoryRow" runat="server">
                     <th scope="row">Category</th>
                     <td><asp:Label ID="CategoryLabel" runat="server" Text='' /></td>
                 </tr>

@@ -76,6 +76,24 @@ namespace EDC_Trabalho3 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl feed_info;
         
         /// <summary>
+        /// table control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTable table;
+        
+        /// <summary>
+        /// titleRow control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell titleRow;
+        
+        /// <summary>
         /// titleLabel control.
         /// </summary>
         /// <remarks>
@@ -83,6 +101,15 @@ namespace EDC_Trabalho3 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label titleLabel;
+        
+        /// <summary>
+        /// linkRow control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow linkRow;
         
         /// <summary>
         /// linkLabel control.
@@ -94,6 +121,15 @@ namespace EDC_Trabalho3 {
         protected global::System.Web.UI.WebControls.Label linkLabel;
         
         /// <summary>
+        /// descriptionRow control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow descriptionRow;
+        
+        /// <summary>
         /// descriptionLabel control.
         /// </summary>
         /// <remarks>
@@ -101,6 +137,15 @@ namespace EDC_Trabalho3 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label descriptionLabel;
+        
+        /// <summary>
+        /// languageRow control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow languageRow;
         
         /// <summary>
         /// languageLabel control.
@@ -112,6 +157,15 @@ namespace EDC_Trabalho3 {
         protected global::System.Web.UI.WebControls.Label languageLabel;
         
         /// <summary>
+        /// managRow control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow managRow;
+        
+        /// <summary>
         /// ManagingEditorLabel control.
         /// </summary>
         /// <remarks>
@@ -119,6 +173,15 @@ namespace EDC_Trabalho3 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ManagingEditorLabel;
+        
+        /// <summary>
+        /// webRow control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow webRow;
         
         /// <summary>
         /// WebMasterLabel control.
@@ -130,6 +193,15 @@ namespace EDC_Trabalho3 {
         protected global::System.Web.UI.WebControls.Label WebMasterLabel;
         
         /// <summary>
+        /// lastRow control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow lastRow;
+        
+        /// <summary>
         /// LastBuildDateLabel control.
         /// </summary>
         /// <remarks>
@@ -137,6 +209,15 @@ namespace EDC_Trabalho3 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LastBuildDateLabel;
+        
+        /// <summary>
+        /// categoryRow control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow categoryRow;
         
         /// <summary>
         /// CategoryLabel control.
